@@ -12,8 +12,8 @@ function Footer() {
           <Logo />
           <p className="mt-10 text-sm">By Thanh Hai Nguyen</p>
         </div>
-        <div className="w-full md:w-1/2 pt-10 md:pt-0 flex justify-end">
-          <div className="flex flex-col justify-between items-end">
+        <div className="w-full md:w-1/2 pt-10 md:pt-0 flex md:justify-end">
+          <div className="flex flex-col justify-between md:items-end">
             <ul className="flex gap-5">
               <li>
                 <a

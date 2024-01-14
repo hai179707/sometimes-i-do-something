@@ -23,12 +23,12 @@ function Project({ data }) {
             <a href={demoUrl}>
               <div className="flex items-center gap-1 group/btn">
                 View Demo{" "}
-                <RiArrowRightLine className="group-hover/btn:translate-x-2 transition-transform duration-300" />
+                <RiArrowRightLine className="group-hover/btn:rotate-[360deg] transition-transform duration-500" />
               </div>
             </a>
             <a href={sourceUrl}>
               <div className="flex items-center gap-1 group/btn">
-                View Source <RiGitBranchLine />
+                View Source <RiGitBranchLine className="group-hover/btn:rotate-[360deg] transition-transform duration-500"  />
               </div>
             </a>
           </div>

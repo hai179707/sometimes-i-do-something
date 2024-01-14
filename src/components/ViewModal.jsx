@@ -12,8 +12,12 @@ function ViewModal({ isOpen, onClose, data }) {
           animate={{ opacity: 1, duration: 0.3 }}
           exit={{ opacity: 0, duration: 0.3 }}
           className="fixed inset-0 z-10 bg-overlay flex justify-center items-center"
+          onClick={onClose}
         >
-          <div className="w-[600px] mx-3 bg-white rounded-xl relative">
+          <div
+            className="w-[800px] mx-3 bg-white rounded-xl relative"
+            onClick={(e) => e.stopPropagation()}
+          >
             <img src={img.src} alt={img.alt} className="rounded-xl" />
             <div className="p-5">
               <h3 className="font-bold">{title}</h3>
@@ -22,19 +26,20 @@ function ViewModal({ isOpen, onClose, data }) {
                 <a href={demoUrl}>
                   <div className="flex items-center gap-1 group/btn">
                     View Demo{" "}
-                    <RiArrowRightLine className="group-hover/btn:translate-x-2 transition-transform duration-300" />
+                    <RiArrowRightLine className="group-hover/btn:rotate-[360deg] transition-transform duration-500" />
                   </div>
                 </a>
                 <a href={sourceUrl}>
                   <div className="flex items-center gap-1 group/btn">
-                    View Source <RiGitBranchLine />
+                    View Source{" "}
+                    <RiGitBranchLine className="group-hover/btn:rotate-[360deg] transition-transform duration-500" />
                   </div>
                 </a>
               </div>
             </div>
             <div
               onClick={onClose}
-              className="p-2 absolute top-2 right-2 text-xl cursor-pointer"
+              className="p-1 absolute top-2 right-2 text-xl cursor-pointer text-gray-500 border border-gray-500 rounded-full"
             >
               <RiCloseFill />
             </div>
