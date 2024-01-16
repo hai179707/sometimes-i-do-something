@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
-import Logo from "./Logo";
 import Container from "./Container";
+import Logo from "./Logo";
 
 function Header() {
   let { search } = useLocation();

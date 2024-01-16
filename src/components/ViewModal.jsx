@@ -1,4 +1,4 @@
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import PropTypes from "prop-types";
 import { RiArrowRightLine, RiCloseFill, RiGitBranchLine } from "react-icons/ri";
 
@@ -23,13 +23,13 @@ function ViewModal({ isOpen, onClose, data }) {
               <h3 className="font-bold">{title}</h3>
               <p className="text-sm text-gray-500 pb-3">{tags.join(", ")}</p>
               <div className="text-sm flex justify-between">
-                <a href={demoUrl}>
+                <a href={demoUrl} target="blank">
                   <div className="flex items-center gap-1 group/btn">
                     View Demo{" "}
                     <RiArrowRightLine className="group-hover/btn:rotate-[360deg] transition-transform duration-500" />
                   </div>
                 </a>
-                <a href={sourceUrl}>
+                <a href={sourceUrl} target="blank">
                   <div className="flex items-center gap-1 group/btn">
                     View Source{" "}
                     <RiGitBranchLine className="group-hover/btn:rotate-[360deg] transition-transform duration-500" />

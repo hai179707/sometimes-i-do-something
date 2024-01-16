@@ -1,8 +1,8 @@
+import { FaFacebookF, FaPhone } from "react-icons/fa";
+import { FiGithub } from "react-icons/fi";
+import { SiZalo } from "react-icons/si";
 import Container from "./Container";
 import Logo from "./Logo";
-import { FaFacebookF, FaPhone } from "react-icons/fa";
-import { SiZalo } from "react-icons/si";
-import { FiGithub } from "react-icons/fi";
 
 function Footer() {
   return (

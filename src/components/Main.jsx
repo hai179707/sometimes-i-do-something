@@ -1,7 +1,7 @@
+import { useLocation } from "react-router-dom";
+import { projects } from "../data";
 import Container from "./Container";
 import Project from "./Project";
-import { projects } from "../data";
-import { useLocation } from "react-router-dom";
 
 function Main() {
   let { search } = useLocation();
