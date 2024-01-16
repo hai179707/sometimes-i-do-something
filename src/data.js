@@ -39,7 +39,7 @@ export const projects = [
       alt: "scrolling animation canvas",
     },
     title: "Scrolling Animation",
-    tags: ["Html", "GSAP"],
+    tags: ["Html", "GSAP", "Desktop Only"],
     demoUrl: "https://scrolling-animation-canvas.netlify.app/",
     sourceUrl: "https://github.com/hai179707/scrolling-animation-canvas",
   },

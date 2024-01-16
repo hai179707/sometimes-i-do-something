@@ -10,7 +10,7 @@ function Footer() {
       <div className="py-12 border-t border-t-primary-black flex flex-wrap mx-4">
         <div className="w-full md:w-1/2">
           <Logo />
-          <p className="mt-10 text-sm">By Thanh Hai Nguyen</p>
+          <p className="mt-10 text-sm">Learn For Free And Share For Free - By Thanh Hai Nguyen</p>
         </div>
         <div className="w-full md:w-1/2 pt-10 md:pt-0 flex md:justify-end">
           <div className="flex flex-col justify-between md:items-end">
